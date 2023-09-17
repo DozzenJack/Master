@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="font-awesome.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#band" class="w3-button w3-bar-item">Band</a>
+  <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="1.jpg"
+  style="width:100%">
+  <img class="mySlides" src="2.jpg"
+  style="width:100%">
+  <img class="mySlides" src="3.jpg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">THE MOMENT</h2>
+  <p class="w3-opacity"><i>We Love The Champions!</i></p>
+  <p class="w3-justify">We have created the most undefeated dance, No one can defeat APONIANS!</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>Jack</p>
+    <img src="4.jpg" alt="Ako Lang To" style="width:100%">
+    <p>Jack is the smartest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Jack</p>
+    <img src="5.JPG" alt="Roar" style="width:100%">
+    <p>Jack is the prettiest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Jack</p>
+    <img src="6.jpg" alt="Ewww" style="width:100%">
+    <p>Jack is the funniest.</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="https://maragusansk.netlify.app/" target="_blank">maragusansk</a>
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
